@@ -1,0 +1,349 @@
+/* ===============================
+   GLOBAL STYLING - Hero Design
+================================ */
+.stApp {
+    background: #f8f9fa;
+    font-family: 'Inter', 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Remove default Streamlit padding */
+.block-container {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    max-width: 100%;
+}
+
+/* ===============================
+   NAVIGATION BAR
+================================ */
+.navbar {
+    background: #ffffff;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #ff5722;
+}
+
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1d29;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #f4511e;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1600') center/cover;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px 50px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    color: #ffffff;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* ===============================
+   MAIN CARD STYLING
+================================ */
+.main-card {
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    max-width: 1200px;
+    margin: 40px auto;
+    border: 1px solid #e8ecf1;
+}
+
+/* ===============================
+   TITLE & SUBTITLE
+================================ */
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1d29;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.form-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1d29;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   BUTTONS - Orange Theme
+================================ */
+.stButton > button {
+    background: #ff5722;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 32px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(255, 87, 34, 0.3);
+}
+
+.stButton > button:hover {
+    background: #f4511e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 87, 34, 0.4);
+}
+
+.stButton > button:active {
+    transform: translateY(0);
+}
+
+/* ===============================
+   FORM INPUTS - Clean Design
+================================ */
+.stNumberInput input,
+.stSelectbox select {
+    font-size: 15px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1.5px solid #e5e7eb;
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+    color: #1f2937;
+    font-weight: 500;
+}
+
+.stNumberInput input:focus,
+.stSelectbox select:focus {
+    border: 1.5px solid #ff5722;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.1);
+}
+
+/* ===============================
+   FORM CONTAINER - Card Style
+================================ */
+section[data-testid="stForm"] {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e8ecf1;
+    margin-top: 25px;
+}
+
+/* ===============================
+   LABELS - Modern Typography
+================================ */
+.stNumberInput label,
+.stSelectbox label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+/* ===============================
+   SUCCESS & ERROR MESSAGES
+================================ */
+.stSuccess {
+    background: #10b981;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 16px 24px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+    margin: 25px 0;
+}
+
+.stError {
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 16px 24px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.2);
+    margin: 25px 0;
+}
+
+/* ===============================
+   CHART CONTAINER
+================================ */
+.plot-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    margin-top: 25px;
+    border: 1px solid #e8ecf1;
+}
+
+/* ===============================
+   COLUMN SPACING
+================================ */
+.row-widget.stHorizontal {
+    gap: 20px;
+}
+
+/* ===============================
+   FORM SUBMIT BUTTON
+================================ */
+.stForm button[type="submit"] {
+    background: #ff5722;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 32px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(255, 87, 34, 0.3);
+    margin-top: 15px;
+    width: 100%;
+}
+
+.stForm button[type="submit"]:hover {
+    background: #f4511e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 87, 34, 0.4);
+}
+
+/* ===============================
+   PLOTLY CHART STYLING
+================================ */
+.js-plotly-plot {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ===============================
+   INPUT GROUPS - Better Spacing
+================================ */
+.stNumberInput,
+.stSelectbox {
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+    
+    .hero-section {
+        padding: 50px 20px;
+        min-height: 400px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .main-card {
+        padding: 30px 20px;
+        margin: 20px 15px;
+    }
+    
+    section[data-testid="stForm"] {
+        padding: 25px 20px;
+    }
+}
+
+/* ===============================
+   REMOVE STREAMLIT BRANDING
+================================ */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* ===============================
+   CLEAN COLUMN LAYOUTS
+================================ */
+[data-testid="column"] {
+    background: transparent;
+    padding: 0 8px;
+}
+
+/* ===============================
+   MODERN SCROLLBAR
+================================ */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
